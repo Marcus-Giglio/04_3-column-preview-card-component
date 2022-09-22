@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+body {
+  background: hsl(0, 0%, 95%) !important;
+  overflow-x: hidden !important;
+}
+.wrapper {
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  flex-direction: column;
+  /* variable  */
+  justify-content: space-between;
+}
+
+.category {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.description {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.learnMore-btn {
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%) !important;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-family: "Lexend Deca", sans-serif;
+}
+.learnMore-btn:active {
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%) !important;
+  color: hsl(0, 0%, 95%) !important;
+}
+
+.car-card:first-child {
+  border-radius: 7px 7px 0 0;
+}
+.car-card:last-child {
+  border-radius: 0 0 7px 7px;
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .wrapper {
+    justify-content: space-evenly;
+  }
+  .car-card:first-child {
+    border-radius: 7px 0 0 7px;
+  }
+  .car-card:last-child {
+    border-radius: 0 7px 7px 0;
+  }
+}
