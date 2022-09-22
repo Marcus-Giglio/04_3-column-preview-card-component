@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://04-3-column-previw-card-component.vercel.app/]
+- Live Site URL: [3-column-preview-card-component](https://04-3-column-previw-card-component.vercel.app/)
 
 ## My process
 
